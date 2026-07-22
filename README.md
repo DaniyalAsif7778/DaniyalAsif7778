@@ -1,4 +1,4 @@
-````markdown
+ 
 <div align="center">
 
 # Hi 👋, I'm Daniyal Asif
@@ -11,7 +11,7 @@
 
 </div>
 
----
+ 
 
 ## 🚀 About Me
 
@@ -31,7 +31,7 @@ Outside of building projects, I'm constantly learning about:
 
 I believe the best way to learn software engineering is by building products that solve real problems.
 
----
+ 
 
 ## 💼 Current Status
 
@@ -41,8 +41,7 @@ I believe the best way to learn software engineering is by building products tha
 - 🌱 Learning **System Design, Scalable Architectures & Agentic AI**
 - 🚀 Building real-world full-stack applications
 - 🎯 Goal: Become a world-class Software Engineer capable of designing scalable systems used by millions.
-
----
+ 
 
 ## 🌐 Connect With Me
 
@@ -60,39 +59,32 @@ I believe the best way to learn software engineering is by building products tha
 </a>
 </p>
 
----
+ 
 
-## 🧠 Developer Mindset
+## 🧠 Developer Profile
 
-```javascript
-const daniyal = {
-    location: "Pakistan",
-    role: "MERN Stack Developer",
+```yaml
+Name: Daniyal Asif
+Role: MERN Stack Developer
+Location: Pakistan
+Company: 5d Flow
 
-    currentlyWorkingAt: "5d Flow",
+Currently Learning:
+  - System Design
+  - Agentic AI
+  - Scalable Backend Architecture
 
-    education: "Intermediate in Computer Science (ICS)",
+Focus:
+  - Full Stack Development
+  - Clean Architecture
+  - Performance Optimization
 
-    learning: [
-        "System Design",
-        "Scalable Backend Architecture",
-        "Agentic AI",
-        "Artificial Intelligence"
-    ],
+Goal:
+  Build software that creates real-world impact.
+```
+ 
 
-    passions: [
-        "Building Products",
-        "Problem Solving",
-        "Clean Code",
-        "Performance",
-        "UI/UX"
-    ],
-
-    goal: "Build software that creates real-world impact."
-}
-````
-
----
+ 
 
 ## 💡 What I Believe
 
@@ -101,8 +93,7 @@ const daniyal = {
 It is about understanding problems, designing scalable solutions, creating intuitive user experiences, and continuously improving every layer of the application.
 
 I'm passionate about learning technologies deeply rather than simply collecting them.
-
----
+ 
 
 ## 🎯 Current Focus
 
@@ -118,7 +109,7 @@ I'm passionate about learning technologies deeply rather than simply collecting 
 
 ✔ Building Production Ready Applications
 
----
+ 
 
 <div align="center">
 
@@ -127,4 +118,4 @@ I'm passionate about learning technologies deeply rather than simply collecting 
 *"Code. Learn. Improve. Repeat."*
 
 </div>
-```
+ 
