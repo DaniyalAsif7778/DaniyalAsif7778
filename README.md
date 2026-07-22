@@ -109,6 +109,164 @@ I'm passionate about learning technologies deeply rather than simply collecting 
 
 ✔ Building Production Ready Applications
 
+## 🛠️ Tech Stack
+
+### 💻 Frontend Development
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,html,css,tailwind,vite,redux" />
+</p>
+
+### ⚙️ Backend Development
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=nodejs,express" />
+</p>
+
+### 🗄️ Database
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=mongodb" />
+</p>
+
+### 🔐 Authentication & Security
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=firebase" />
+</p>
+
+> Currently working with **JWT Authentication**, **Secure Cookies**, **Role-Based Access Control**, and modern authentication workflows in MERN applications.
+
+---
+
+## 🧰 Tools & Technologies
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=git,github,vscode,postman,npm,figma,linux,windows" />
+</p>
+
+---
+
+## 🌱 Currently Learning
+
+I'm continuously improving my skills by studying technologies that help build scalable, production-ready software.
+
+* 🏗️ System Design
+* ☁️ Scalable Backend Architecture
+* 🤖 Artificial Intelligence
+* 🧠 Agentic AI
+* 🔒 Secure Authentication & Authorization
+* ⚡ Performance Optimization
+* 📦 Clean Architecture
+* 🧩 Design Patterns
+
+---
+
+## 🚀 Currently Building
+
+### 🏢 Employee Management System
+
+A production-oriented MERN application featuring:
+
+* Multi-Tenant Architecture
+* Secure Authentication
+* Organization Management
+* Employee Management
+* Task Assignment
+* Role-Based Authorization
+* Modern Responsive UI
+
+---
+
+### 🛒 E-Commerce Platform
+
+Building a scalable online shopping experience with:
+
+* Product Management
+* Shopping Cart
+* Authentication
+* Responsive Design
+* Clean UI
+* Modern React Architecture
+
+---
+
+## 📈 My Development Journey
+
+ 
+2024  ████████░░ Started Web Development
+
+2025  ████████████████ Learned React Ecosystem
+
+2026  ████████████████████████
+      MERN Stack Development
+      Real-world Projects
+      Working at 5d Flow
+      Learning System Design
+      Exploring Agentic AI
+ 
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=DaniyalAsif7778&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaniyalAsif7778&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+---
+
+## 🔥 GitHub Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=DaniyalAsif7778&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+---
+
+## 📈 Contribution Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=DaniyalAsif7778&theme=tokyo-night&hide_border=true"/>
+
+</div>
+
+---
+
+## 🏆 GitHub Achievements
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=DaniyalAsif7778&theme=tokyonight&no-frame=true&margin-w=15&row=2&column=4"/>
+
+</div>
+
+---
+
+## 💡 What Drives Me
+
+> I enjoy turning ideas into reliable software through thoughtful design, continuous learning, and practical problem solving.
+
+Every project is an opportunity to write cleaner code, improve architecture, and build solutions that people can genuinely use.
+
+---
+
+## 📚 Current Goals
+
+* ✅ Master the MERN Stack
+* ✅ Deepen System Design knowledge
+* ✅ Build scalable backend systems
+* ✅ Explore AI and Agentic AI
+* ✅ Contribute to impactful real-world projects
+* ✅ Grow into a Software Engineer capable of building production-scale applications
+
  
 
 <div align="center">
