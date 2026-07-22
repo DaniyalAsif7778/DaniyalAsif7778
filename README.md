@@ -63,7 +63,7 @@ I believe the best way to learn software engineering is by building products tha
 
 ## 🧠 Developer Profile
 
-```yaml
+ 
 Name: Daniyal Asif
 Role: MERN Stack Developer
 Location: Pakistan
@@ -81,7 +81,7 @@ Focus:
 
 Goal:
   Build software that creates real-world impact.
-```
+ 
  
 
  
