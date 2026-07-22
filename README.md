@@ -267,7 +267,160 @@ Every project is an opportunity to write cleaner code, improve architecture, and
 * ✅ Contribute to impactful real-world projects
 * ✅ Grow into a Software Engineer capable of building production-scale applications
 
+ ## 🚀 Featured Projects
+
+### 🏢 Employee Management System
+
+A full-stack MERN application designed to simplify employee and organization management with a modern, scalable architecture.
+
+**Highlights**
+
+* Secure JWT Authentication
+* Role-Based Access Control
+* Employee & Organization Management
+* Task Assignment System
+* Responsive Dashboard
+* Modern UI
+
+**Tech Stack**
+
+`React` `Node.js` `Express.js` `MongoDB` `Tailwind CSS` `JWT`
+
+---
+
+### 🛒 E-Commerce Application
+
+A modern shopping platform built with the MERN stack, focusing on clean architecture and an intuitive user experience.
+
+**Features**
+
+* Product Catalog
+* Shopping Cart
+* Authentication
+* Responsive Design
+* Modern React Components
+
+**Tech Stack**
+
+`React` `Node.js` `MongoDB` `Express`
+
+---
+
+### 🌦️ Weather Application
+
+A responsive weather application that displays real-time weather information using external APIs.
+
+**Features**
+
+* Live Weather
+* Responsive UI
+* Search Cities
+* Modern Interface
+
+---
+
+### 💱 Currency Converter
+
+A lightweight application for converting currencies with a clean and responsive interface.
+
+**Features**
+
+* Live Currency Conversion
+* Fast UI
+* Responsive Design
+
+---
+
+### 💼 Portfolio Website
+
+My personal portfolio showcasing projects, technical skills, and professional journey.
+
+**Highlights**
+
+* Responsive Design
+* Modern Animations
+* Project Showcase
+* Contact Section
+
+---
+
+## 📈 Development Roadmap
+
+ ✔ HTML & CSS
+        ↓
+✔ JavaScript (ES6+)
+        ↓
+✔ React.js
+        ↓
+✔ Redux Toolkit
+        ↓
+✔ Next.js
+        ↓
+✔ Node.js
+        ↓
+✔ Express.js
+        ↓
+✔ MongoDB
+        ↓
+✔ Full Stack MERN
+        ↓
+🔄 System Design
+        ↓
+🔄 Agentic AI
+        ↓
+🎯 Scalable Software Engineering 
  
+
+---
+
+## 🎯 2026 Goals
+
+* Build production-ready  application
+* Master scalable system design
+* Deepen backend engineering expertise
+* Learn advanced AI and Agentic AI workflows
+*  Continue growing as a Full Stack Software Engineer
+
+---
+
+## 🤝 Let's Connect
+
+<p align="center">
+
+<a href="https://github.com/DaniyalAsif7778">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="mailto:[daniyal.personel7778@gmail.com](mailto:daniyal.personel7778@gmail.com)">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/daniyal-asif-25ba10332/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+## 💬 Favorite Quote
+
+> *"Success isn't built in a single breakthrough. It's built through consistent learning, disciplined practice, and the courage to keep improving."*
+
+---
+
+<div align="center">
+
+### ⭐ Thanks for visiting my profile!
+
+If you enjoy my work or find any of my projects useful, consider leaving a ⭐ on the repository.
+
+*"Building software that solves real-world problems, one project at a time."*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:2563EB&height=120&section=footer"/>
+
+</div>
+
 
 <div align="center">
 
