@@ -1,14 +1,14 @@
-<svg width="2240" height="1200" viewBox="0 0 2240 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bannerTitle bannerDesc">
+<svg width="3840" height="1200" viewBox="0 0 3840 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bannerTitle bannerDesc">
   <title id="bannerTitle">Daniyal Asif — MERN Stack Developer</title>
   <desc id="bannerDesc">Animated dark glassmorphic profile banner for Daniyal Asif, MERN Stack Developer at 5d Flow, Pakistan, showing current tech stack and learning focus.</desc>
 
   <defs>
     <!-- ============ CLIP ============ -->
     <clipPath id="bannerClip">
-      <rect x="0" y="0" width="2240" height="700"/>
+      <rect x="0" y="0" width="3840" height="1200"/>
     </clipPath>
     <clipPath id="cardClip">
-      <rect x="67" y="56" width="2106" height="546" rx="34"/>
+      <rect x="115" y="96" width="3610" height="936" rx="58"/>
     </clipPath>
 
 <!-- ============ GRADIENTS ============ -->
@@ -45,7 +45,7 @@
 
 <!-- ============ FILTERS ============ -->
 <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-  <feGaussianBlur stdDeviation="5.6" result="blur"/>
+  <feGaussianBlur stdDeviation="9.6" result="blur"/>
   <feMerge>
     <feMergeNode in="blur"/>
     <feMergeNode in="SourceGraphic"/>
@@ -53,7 +53,7 @@
 </filter>
 
 <filter id="orbBlur" x="-50%" y="-50%" width="200%" height="200%">
-  <feGaussianBlur stdDeviation="64"/>
+  <feGaussianBlur stdDeviation="110"/>
 </filter>
 
 <filter id="grain">
@@ -63,56 +63,56 @@
 
 <!-- ============ REUSABLE TEXT STYLES ============ -->
 <style>
-  .name       { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 84px; fill: #FFFFFF; letter-spacing: -1.4px; }
-  .subtitle   { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 33px; fill: #38BDF8; letter-spacing: 0.7px; }
-  .meta       { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 23px; fill: #94A3B8; }
-  .label      { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 19px; fill: #64748B; letter-spacing: 2.8px; }
-  .pill-text  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 21px; fill: #E2E8F0; }
+  .name       { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 144px; fill: #FFFFFF; letter-spacing: -2.4px; }
+  .subtitle   { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 56px; fill: #38BDF8; letter-spacing: 1.2px; }
+  .meta       { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 39px; fill: #94A3B8; }
+  .label      { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 32px; fill: #64748B; letter-spacing: 4.8px; }
+  .pill-text  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 36px; fill: #E2E8F0; }
 </style>
 
   </defs>
 
   <!-- ============ BACKGROUND BASE ============ -->
 
-  <rect width="2240" height="700" fill="url(#bgGradient)"/>
+  <rect width="3840" height="1200" fill="url(#bgGradient)"/>
 
   <!-- ============ ANIMATED DECORATIVE LAYER ============ -->
 
   <g clip-path="url(#bannerClip)">
 
 <!-- subtle grain for texture/premium feel -->
-<rect width="2240" height="700" filter="url(#grain)" opacity="0.03"/>
+<rect width="3840" height="1200" filter="url(#grain)" opacity="0.03"/>
 
 <!-- drifting blue glow orb (also lights up the name/subtitle area) -->
-<circle cx="364" cy="196" r="392" fill="url(#glowPrimary)" filter="url(#orbBlur)">
-  <animateTransform attributeName="transform" type="translate" values="0,0; 56,35; 0,0" dur="22s" repeatCount="indefinite"/>
+<circle cx="624" cy="336" r="672" fill="url(#glowPrimary)" filter="url(#orbBlur)">
+  <animateTransform attributeName="transform" type="translate" values="0,0; 96,60; 0,0" dur="22s" repeatCount="indefinite"/>
 </circle>
 
 <!-- drifting cyan glow orb -->
-<circle cx="1890" cy="518" r="420" fill="url(#glowSecondary)" filter="url(#orbBlur)">
-  <animateTransform attributeName="transform" type="translate" values="0,0; -49,-28; 0,0" dur="26s" repeatCount="indefinite"/>
+<circle cx="3240" cy="888" r="720" fill="url(#glowSecondary)" filter="url(#orbBlur)">
+  <animateTransform attributeName="transform" type="translate" values="0,0; -84,-48; 0,0" dur="26s" repeatCount="indefinite"/>
 </circle>
 
 <!-- moving particles: fade + gentle upward drift, staggered timing -->
-<circle cx="210"  cy="588" r="2.8"  fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13s" begin="0s"    repeatCount="indefinite"/><animate attributeName="cy" values="588;539" dur="13s" begin="0s"    repeatCount="indefinite"/></circle>
-<circle cx="434"  cy="224" r="2.24" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16s" begin="1.2s"  repeatCount="indefinite"/><animate attributeName="cy" values="224;168" dur="16s" begin="1.2s"  repeatCount="indefinite"/></circle>
-<circle cx="644"  cy="504" r="3.36" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11s" begin="2.4s"  repeatCount="indefinite"/><animate attributeName="cy" values="504;462" dur="11s" begin="2.4s"  repeatCount="indefinite"/></circle>
-<circle cx="854"  cy="126" r="2.52" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="19s" begin="0.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="126;63"  dur="19s" begin="0.6s"  repeatCount="indefinite"/></circle>
-<circle cx="1064" cy="434" r="2.94" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="14s" begin="3.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="434;381" dur="14s" begin="3.1s"  repeatCount="indefinite"/></circle>
-<circle cx="1260" cy="602" r="2.38" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="17s" begin="1.8s"  repeatCount="indefinite"/><animate attributeName="cy" values="602;557" dur="17s" begin="1.8s"  repeatCount="indefinite"/></circle>
-<circle cx="1456" cy="196" r="3.22" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="12s" begin="2.9s"  repeatCount="indefinite"/><animate attributeName="cy" values="196;137" dur="12s" begin="2.9s"  repeatCount="indefinite"/></circle>
-<circle cx="1652" cy="504" r="2.66" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="15s" begin="0.3s"  repeatCount="indefinite"/><animate attributeName="cy" values="504;454" dur="15s" begin="0.3s"  repeatCount="indefinite"/></circle>
-<circle cx="1820" cy="294" r="3.08" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="18s" begin="3.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="294;238" dur="18s" begin="3.6s"  repeatCount="indefinite"/></circle>
-<circle cx="1988" cy="574" r="2.24" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="10s" begin="1.5s"  repeatCount="indefinite"/><animate attributeName="cy" values="574;532" dur="10s" begin="1.5s"  repeatCount="indefinite"/></circle>
-<circle cx="2100" cy="154" r="2.8"  fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="20s" begin="2.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="154;92"  dur="20s" begin="2.1s"  repeatCount="indefinite"/></circle>
-<circle cx="126"  cy="364" r="2.52" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13.5s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="cy" values="364;316" dur="13.5s" begin="0.9s" repeatCount="indefinite"/></circle>
-<circle cx="2170" cy="448" r="2.94" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16.5s" begin="3.3s" repeatCount="indefinite"/><animate attributeName="cy" values="448;395" dur="16.5s" begin="3.3s" repeatCount="indefinite"/></circle>
-<circle cx="336"  cy="644" r="2.38" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11.5s" begin="2.7s" repeatCount="indefinite"/><animate attributeName="cy" values="644;599" dur="11.5s" begin="2.7s" repeatCount="indefinite"/></circle>
+<circle cx="360"  cy="1008" r="4.8"  fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13s" begin="0s"    repeatCount="indefinite"/><animate attributeName="cy" values="1008;408;1008" dur="13s" repeatCount="indefinite"/></circle>
+<circle cx="744"  cy="384" r="3.84" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16s" begin="1.2s"  repeatCount="indefinite"/><animate attributeName="cy" values="384;144;384" dur="16s" repeatCount="indefinite"/></circle>
+<circle cx="1104" cy="864" r="5.76" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11s" begin="2.4s"  repeatCount="indefinite"/><animate attributeName="cy" values="864;264;864" dur="11s" repeatCount="indefinite"/></circle>
+<circle cx="1464" cy="216" r="4.32" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="19s" begin="0.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="216;36;216" dur="19s" repeatCount="indefinite"/></circle>
+<circle cx="1824" cy="744" r="5.04" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="14s" begin="3.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="744;312;744" dur="14s" repeatCount="indefinite"/></circle>
+<circle cx="2160" cy="1032" r="4.08" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="17s" begin="1.8s"  repeatCount="indefinite"/><animate attributeName="cy" values="1032;288;1032" dur="17s" repeatCount="indefinite"/></circle>
+<circle cx="2496" cy="336" r="5.52" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="12s" begin="2.9s"  repeatCount="indefinite"/><animate attributeName="cy" values="336;96;336" dur="12s" repeatCount="indefinite"/></circle>
+<circle cx="2832" cy="864" r="4.56" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="15s" begin="0.3s"  repeatCount="indefinite"/><animate attributeName="cy" values="864;240;864" dur="15s" repeatCount="indefinite"/></circle>
+<circle cx="3120" cy="504" r="5.28" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="18s" begin="3.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="504;144;504" dur="18s" repeatCount="indefinite"/></circle>
+<circle cx="3408" cy="984" r="3.84" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="10s" begin="1.5s"  repeatCount="indefinite"/><animate attributeName="cy" values="984;336;984" dur="10s" repeatCount="indefinite"/></circle>
+<circle cx="3600" cy="264" r="4.8"  fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="20s" begin="2.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="264;24;264" dur="20s" repeatCount="indefinite"/></circle>
+<circle cx="216"  cy="624" r="4.32" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13.5s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="cy" values="624;240;624" dur="13.5s" repeatCount="indefinite"/></circle>
+<circle cx="3720" cy="768" r="5.04" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16.5s" begin="3.3s" repeatCount="indefinite"/><animate attributeName="cy" values="768;288;768" dur="16.5s" repeatCount="indefinite"/></circle>
+<circle cx="576"  cy="1104" r="4.08" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11.5s" begin="2.7s" repeatCount="indefinite"/><animate attributeName="cy" values="1104;480;1104" dur="11.5s" repeatCount="indefinite"/></circle>
 
-<!-- seamless looping wave, one 2240px unit repeated twice, translated by exactly one unit -->
+<!-- seamless looping wave, one 3840px unit repeated twice, translated by exactly one unit -->
 <g>
-  <animateTransform attributeName="transform" type="translate" values="0,0; -2240,0" dur="18s" repeatCount="indefinite"/>
-  <path d="M0,644 C560,714 1120,574 2240,644 C2800,714 3360,574 4480,644 L4480,700 L0,700 Z" fill="url(#waveGradient)"/>
+  <animateTransform attributeName="transform" type="translate" values="0,0; -3840,0" dur="18s" repeatCount="indefinite"/>
+  <path d="M0,1104 C960,1224 1920,984 3840,1104 C4800,1224 5760,984 7680,1104 L7680,1200 L0,1200 Z" fill="url(#waveGradient)"/>
 </g>
 
   </g>
@@ -121,73 +121,73 @@
 
   <!-- ambient edge glow -->
 
-  <rect x="67" y="56" width="2106" height="546" rx="34" fill="none" stroke="#2563EB" stroke-opacity="0.35" stroke-width="2.8" filter="url(#softGlow)"/>
+  <rect x="115" y="96" width="3610" height="936" rx="58" fill="none" stroke="#2563EB" stroke-opacity="0.35" stroke-width="4.8" filter="url(#softGlow)"/>
   <!-- crisp glass panel -->
-  <rect x="67" y="56" width="2106" height="546" rx="34" fill="#111827" fill-opacity="0.50" stroke="#1E293B" stroke-width="1.4"/>
+  <rect x="115" y="96" width="3610" height="936" rx="58" fill="#111827" fill-opacity="0.50" stroke="#1E293B" stroke-width="2.4"/>
   <!-- glass sheen -->
-  <rect x="67" y="56" width="2106" height="196" fill="url(#cardSheen)" clip-path="url(#cardClip)"/>
+  <rect x="115" y="96" width="3610" height="336" fill="url(#cardSheen)" clip-path="url(#cardClip)"/>
 
   <!-- ============ CONTENT ============ -->
 
-<text x="134" y="199" class="name">Daniyal Asif</text><text x="137" y="252" class="subtitle">MERN Stack Developer</text>
+<text x="230" y="342" class="name">Daniyal Asif</text><text x="235" y="432" class="subtitle">MERN Stack Developer</text>
 
-  <circle cx="143" cy="294" r="6" fill="#2563EB">
+  <circle cx="245" cy="504" r="10.3" fill="#2563EB">
     <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="165" y="301" class="meta">Currently building @ 5d Flow</text>
+  <text x="283" y="516" class="meta">Currently building @ 5d Flow</text>
 
-  <line x1="134" y1="336" x2="2106" y2="336" stroke="#1E293B" stroke-width="1.4" opacity="0.6"/>
+  <line x1="230" y1="576" x2="3610" y2="576" stroke="#1E293B" stroke-width="2.4" opacity="0.6"/>
 
   <!-- Currently Learning -->
 
-<text x="137" y="386" class="label">CURRENTLY LEARNING</text>
+<text x="235" y="662" class="label">CURRENTLY LEARNING</text>
 
   <g>
-    <rect x="134" y="403" width="211" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.4"/>
-    <text x="240" y="433" text-anchor="middle" class="pill-text">System Design</text>
+    <rect x="230" y="692" width="362" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="2.4"/>
+    <text x="411" y="742" text-anchor="middle" class="pill-text">System Design</text>
 
-<rect x="362" y="403" width="248" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="486" y="433" text-anchor="middle" class="pill-text">Scalable Backend</text>
+<rect x="620" y="692" width="425" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="832" y="742" text-anchor="middle" class="pill-text">Scalable Backend</text>
 
-<rect x="627" y="403" width="174" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="714" y="433" text-anchor="middle" class="pill-text">Agentic AI</text>
+<rect x="1075" y="692" width="298" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="1224" y="742" text-anchor="middle" class="pill-text">Agentic AI</text>
 
-<rect x="818" y="403" width="335" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="986" y="433" text-anchor="middle" class="pill-text">Artificial Intelligence</text>
+<rect x="1402" y="692" width="575" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="1689" y="742" text-anchor="middle" class="pill-text">Artificial Intelligence</text>
 
   </g>
 
   <!-- Tech Stack -->
 
-<text x="137" y="490" class="label">TECH STACK</text>
+<text x="235" y="840" class="label">TECH STACK</text>
 
   <g>
-    <rect x="134"  y="507" width="118" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-    <text x="193" y="537" text-anchor="middle" class="pill-text">React</text>
+    <rect x="230"  y="870" width="202" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+    <text x="331" y="920" text-anchor="middle" class="pill-text">React</text>
 
-<rect x="269" y="507" width="136" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="337" y="537" text-anchor="middle" class="pill-text">Next.js</text>
+<rect x="461" y="870" width="233" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="577" y="920" text-anchor="middle" class="pill-text">Next.js</text>
 
-<rect x="422" y="507" width="136" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="490" y="537" text-anchor="middle" class="pill-text">Node.js</text>
+<rect x="723" y="870" width="233" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="839" y="920" text-anchor="middle" class="pill-text">Node.js</text>
 
-<rect x="575" y="507" width="136" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="643" y="537" text-anchor="middle" class="pill-text">Express</text>
+<rect x="985" y="870" width="233" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="1101" y="920" text-anchor="middle" class="pill-text">Express</text>
 
-<rect x="728" y="507" width="136" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="796" y="537" text-anchor="middle" class="pill-text">MongoDB</text>
+<rect x="1247" y="870" width="233" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="1363" y="920" text-anchor="middle" class="pill-text">MongoDB</text>
 
-<rect x="881" y="507" width="198" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="980" y="537" text-anchor="middle" class="pill-text">Tailwind CSS</text>
+<rect x="1509" y="870" width="340" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="1679" y="920" text-anchor="middle" class="pill-text">Tailwind CSS</text>
 
-<rect x="1096" y="507" width="174" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="1183" y="537" text-anchor="middle" class="pill-text">TypeScript</text>
+<rect x="1879" y="870" width="298" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="2028" y="920" text-anchor="middle" class="pill-text">TypeScript</text>
 
-<rect x="1287" y="507" width="211" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="1393" y="537" text-anchor="middle" class="pill-text">Redux Toolkit</text>
+<rect x="2207" y="870" width="362" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="2388" y="920" text-anchor="middle" class="pill-text">Redux Toolkit</text>
 
-<rect x="1515" y="507" width="174" height="45" rx="22" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1.4"/>
-<text x="1602" y="537" text-anchor="middle" class="pill-text">JavaScript</text>
+<rect x="2599" y="870" width="298" height="77" rx="38" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="2.4"/>
+<text x="2748" y="920" text-anchor="middle" class="pill-text">JavaScript</text>
 
   </g>
 </svg>
