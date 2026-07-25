@@ -1,7 +1,9 @@
  
 <div align="center">
 
-<img src="assets/core/banner.svg" width="100%" height="auto" alt="Daniyal Asif — MERN Stack Developer">
+<div style="display: block; width: 100%; margin: 0; padding: 0;">
+  <svg src="assets/core/banner.svg" style="width: 100%; height: auto; display: block; max-width: 100%;" alt="Daniyal Asif — MERN Stack Developer"></svg>
+</div>
 
 <br><br>
 
