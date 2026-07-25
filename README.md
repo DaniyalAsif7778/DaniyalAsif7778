@@ -2,7 +2,7 @@
 <div align="center">
 
 <div  >
-<img src="assets/core/banner.svg"   alt="Daniyal Asif — MERN Stack Developer">
+<img src="assets/core/banner.svg"  height="1200px" alt="Daniyal Asif — MERN Stack Developer">
 </div>
 
 <br><br>
