@@ -1,96 +1,208 @@
+```html
 <div align="center">
 
-<img src="assets/core/banner.svg" width="100%" alt="Daniyal Asif — MERN Stack Developer" />
+<img src="assets/core/banner.svg" width="100%" alt="Daniyal Asif — MERN Stack Developer">
 
-<br/>
+<br><br>
 
-<img src="assets/core/logo.svg" width="88" height="88" alt="Daniyal Asif logo" />
+<img src="assets/core/logo.svg" width="88" alt="Daniyal Asif Logo">
 
-<br/><br/>
+<br><br>
 
-<a href="https://github.com/DaniyalAsif7778"><img src="assets/badges/github-badge.svg" height="40" alt="GitHub" /></a>
-<a href="https://www.linkedin.com/in/daniyal-asif-25ba10332/"><img src="assets/badges/linkedin-badge.svg" height="40" alt="LinkedIn" /></a>
-<a href="mailto:daniyal.personel7778@gmail.com"><img src="assets/badges/email-badge.svg" height="40" alt="Email" /></a>
-<a href="https://daniyal-porfolio-three.vercel.app/"><img src="assets/badges/portfolio-badge.svg" height="40" alt="Portfolio" /></a>
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/components/divider.svg" width="100%" alt="" />
-</div>
-
-<br/>
-
-<div align="center">
-
-### MERN Stack Developer building scalable, modern web applications with React, Node.js, Express, and MongoDB — while exploring System Design and Agentic AI.
-
-I'm a MERN Stack Developer from Pakistan, currently working at **5d Flow**. I enjoy building scalable full-stack applications with clean architecture, modern UI, and secure backend systems, and I'm continuously expanding into System Design, scalable software architecture, and Agentic AI.
-
-</div>
-
-<br/>
-
-<div align="center">
-
-## 📊 GitHub Stats
-
-<img src="assets/stats/stats-card.svg" width="100%" alt="Live GitHub stats for DaniyalAsif7778: repositories, followers, and following" />
-
-<sub>Kept current automatically — see <a href="docs/INSTALLATION.md">docs/INSTALLATION.md</a> for how the refresh works.</sub>
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/components/divider.svg" width="100%" alt="" />
-</div>
-
-<br/>
-
-<div align="center">
-
-## 🚀 Featured Projects
-
-<br/>
-
-<a href="https://employ-managment-system.vercel.app/">
-<img src="assets/cards/employee-management-card.svg" width="47%" alt="Employee Management System — production-grade MERN app for managing employees, roles, tasks and org structure" />
-</a>
-&nbsp;
-<a href="https://github.com/DaniyalAsif7778/E-Commerse">
-<img src="assets/cards/ecommerce-card.svg" width="47%" alt="E-Commerce — modern MERN shopping platform with cart, auth and scalable architecture" />
+<a href="https://github.com/DaniyalAsif7778">
+<img src="assets/badges/github-badge.svg" height="40" alt="GitHub">
 </a>
 
-<br/><br/>
+<a href="https://www.linkedin.com/in/daniyal-asif-25ba10332/">
+<img src="assets/badges/linkedin-badge.svg" height="40" alt="LinkedIn">
+</a>
+
+<a href="mailto:daniyal.personel7778@gmail.com">
+<img src="assets/badges/email-badge.svg" height="40" alt="Email">
+</a>
 
 <a href="https://daniyal-porfolio-three.vercel.app/">
-<img src="assets/cards/portfolio-card.svg" width="47%" alt="Portfolio — personal site with responsive layouts and clean animations" />
-</a>
-&nbsp;
-<a href="https://github.com/DaniyalAsif7778/Weather-App">
-<img src="assets/cards/weather-app-card.svg" width="47%" alt="Weather App — responsive weather app using external APIs" />
+<img src="assets/badges/portfolio-badge.svg" height="40" alt="Portfolio">
 </a>
 
-<br/><br/>
+</div>
+
+<br>
+
+<div align="center">
+<img src="assets/components/divider.svg" width="100%" alt="Section Divider">
+</div>
+
+<br>
+
+<div align="center">
+
+<h2>👋 About Me</h2>
+
+<p>
+
+I'm <strong>Daniyal Asif</strong>, a MERN Stack Developer from Pakistan currently working at <strong>5d Flow</strong>.
+
+I enjoy building scalable, secure, and modern web applications using React, Node.js, Express, and MongoDB. My focus is writing clean, maintainable code while continuously improving my understanding of software architecture and backend engineering.
+
+</p>
+
+</div>
+
+<br>
+
+<div align="center">
+<img src="assets/components/divider.svg" width="100%" alt="Section Divider">
+</div>
+
+<br>
+
+## 💻 Tech Stack
+
+### Frontend
+
+- React.js
+- Next.js
+- TypeScript
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+- Redux Toolkit
+
+### Backend
+
+- Node.js
+- Express.js
+- REST APIs
+- JWT Authentication
+
+### Database
+
+- MongoDB
+- Mongoose
+
+### Tools
+
+- Git
+- GitHub
+- VS Code
+- Postman
+- npm
+
+### Operating Systems
+
+- Windows
+- Linux
+
+### Currently Learning
+
+- System Design
+- Scalable Backend Architecture
+- Agentic AI
+- Artificial Intelligence
+- Performance Optimization
+
+<br>
+
+<div align="center">
+<img src="assets/components/divider.svg" width="100%" alt="Section Divider">
+</div>
+
+<br>
+
+<div align="center">
+
+<h2>📊 GitHub Statistics</h2>
+
+<img src="assets/stats/stats-card.svg" width="100%" alt="GitHub Statistics">
+
+<br><br>
+
+<sub>
+Automatically updated from GitHub.
+</sub>
+
+</div>
+
+<br>
+
+<div align="center">
+<img src="assets/components/divider.svg" width="100%" alt="Section Divider">
+</div>
+
+<br>
+
+<div align="center">
+
+<h2>🚀 Featured Projects</h2>
+
+<br>
+
+<a href="https://employ-managment-system.vercel.app/">
+<img src="assets/cards/employee-management-card.svg" width="48%" alt="Employee Management System">
+</a>
+
+<a href="https://github.com/DaniyalAsif7778/E-Commerse">
+<img src="assets/cards/ecommerce-card.svg" width="48%" alt="E-Commerce">
+</a>
+
+<br><br>
+
+<a href="https://daniyal-porfolio-three.vercel.app/">
+<img src="assets/cards/portfolio-card.svg" width="48%" alt="Portfolio">
+</a>
+
+<a href="https://github.com/DaniyalAsif7778/Weather-App">
+<img src="assets/cards/weather-app-card.svg" width="48%" alt="Weather Application">
+</a>
+
+<br><br>
 
 <a href="https://github.com/DaniyalAsif7778/React-Currency-Changer">
-<img src="assets/cards/currency-converter-card.svg" width="47%" alt="Currency Converter — lightweight converter with real-time exchange rates" />
+<img src="assets/cards/currency-converter-card.svg" width="48%" alt="Currency Converter">
 </a>
 
 </div>
 
-<br/>
+<br>
 
 <div align="center">
-<img src="assets/components/divider.svg" width="100%" alt="" />
+<img src="assets/components/divider.svg" width="100%" alt="Section Divider">
 </div>
 
-<br/>
+<br>
 
 <div align="center">
-<sub>Built as a fully custom SVG-first design system — no README generator templates. See <a href="docs/DESIGN-SYSTEM.md">docs/DESIGN-SYSTEM.md</a> for the tokens and components behind it.</sub>
+
+<h2>🤝 Let's Connect</h2>
+
+<p>
+I'm always interested in collaborating on meaningful projects, open-source contributions, and opportunities to build impactful software.
+</p>
+
+<br>
+
+<a href="mailto:daniyal.personel7778@gmail.com">
+<img src="assets/badges/email-badge.svg" height="40" alt="Email">
+</a>
+
+<a href="https://www.linkedin.com/in/daniyal-asif-25ba10332/">
+<img src="assets/badges/linkedin-badge.svg" height="40" alt="LinkedIn">
+</a>
+
 </div>
+
+<br>
+
+<div align="center">
+
+<sub>
+
+Designed with a custom SVG-first design system.<br>
+Built from scratch without using README generator templates.
+
+</sub>
+
+</div>
+```
