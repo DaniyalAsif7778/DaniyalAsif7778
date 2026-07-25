@@ -1,7 +1,7 @@
  
 <div align="center">
 
-<img src="assets/core/banner.svg" width="100%" alt="Daniyal Asif — MERN Stack Developer">
+<img src="assets/core/banner.svg" width="100%" height="auto" alt="Daniyal Asif — MERN Stack Developer">
 
 <br><br>
 
@@ -43,7 +43,7 @@
 
 I'm <strong>Daniyal Asif</strong>, a MERN Stack Developer from Pakistan currently working at <strong>5d Flow</strong>.
 
-I enjoy building scalable, secure, and modern web applications using React, Node.js, Express, and MongoDB. My focus is writing clean, maintainable code while continuously improving my understanding of software architecture and backend engineering.
+I enjoy building scalable, secure, and modern web applications using React, Node.js, Express, and MongoDB. My focus is writing clean, maintainable code while continuously improving my understanding of[...]
 
 </p>
 
