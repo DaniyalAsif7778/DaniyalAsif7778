@@ -1,4 +1,4 @@
-```html
+ html
 <div align="center">
 
 <img src="assets/core/banner.svg" width="100%" alt="Daniyal Asif — MERN Stack Developer">
@@ -205,4 +205,4 @@ Built from scratch without using README generator templates.
 </sub>
 
 </div>
-```
+ 
