@@ -78,10 +78,10 @@
   <text x="158.0" y="216.5" text-anchor="middle" class="tag-text">Tailwind</text>
   <rect x="214.0" y="199" width="81.6" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
   <text x="254.8" y="216.5" text-anchor="middle" class="tag-text">Typescript</text>
-  <rect x="214.0" y="199" width="81.6" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
-  <text x="254.8" y="216.5" text-anchor="middle" class="tag-text">vite</text>
-    <rect x="214.0" y="199" width="81.6" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
-  <text x="254.8" y="216.5" text-anchor="middle" class="tag-text">OpenWheaterApi</text>
+  <rect x="300.0" y="199" width="81.6" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="354.8" y="216.5" text-anchor="middle" class="tag-text">vite</text>
+  <rect x="414.0" y="199" width="100" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="554.8" y="216.5" text-anchor="middle" class="tag-text">OpenWheaterApi</text>
   <!-- clickable affordance -->
   <rect x="42" y="374" width="152" height="34" rx="17" fill="#0D1117" fill-opacity="0.5" stroke="url(#cardBorder)" stroke-opacity="0.6" stroke-width="1.2"/>
   <text x="58" y="396" class="cta-text">View Project</text>
