@@ -1,0 +1,47 @@
+name: Update GitHub Stats Card
+
+# Keeps assets/stats/stats-card.svg current:
+# - once a day on a schedule
+# - whenever it's triggered by hand from the Actions tab
+# - whenever this workflow file itself changes, as a sanity check
+on:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC daily
+  workflow_dispatch: {}
+  push:
+    paths:
+      - ".github/workflows/update-stats.yml"
+      - "scripts/generate-stats-card.js"
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate stats card
+        env:
+          GITHUB_USERNAME: DaniyalAsif7778
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-stats-card.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- assets/stats/stats-card.svg; then
+            git add assets/stats/stats-card.svg
+            git commit -m "chore: refresh live GitHub stats card"
+            git push
+          else
+            echo "No stats change — nothing to commit."
+          fi

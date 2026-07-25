@@ -1,0 +1,60 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">DA Monogram</title>
+  <desc id="logoDesc">Hexagonal blue-gradient monogram mark for Daniyal Asif, with a soft glow, on a transparent background.</desc>
+
+  <defs>
+    <!-- Primary -> Secondary brand gradient, diagonal -->
+    <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <!-- Soft white sheen for a glass-like top highlight -->
+    <linearGradient id="hexSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Soft ambient glow filter: blurs a copy and merges with the crisp source -->
+    <filter id="hexGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip used to keep the sheen highlight inside the hexagon -->
+    <clipPath id="hexClip">
+      <polygon points="100,20 169.3,60 169.3,140 100,180 30.7,140 30.7,60"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ambient blurred glow sitting behind the mark -->
+  <polygon
+    points="100,20 169.3,60 169.3,140 100,180 30.7,140 30.7,60"
+    fill="url(#hexGradient)"
+    opacity="0.55"
+    filter="url(#hexGlow)"
+  />
+
+  <!-- Crisp hexagon, blue gradient fill -->
+  <polygon
+    points="100,20 169.3,60 169.3,140 100,180 30.7,140 30.7,60"
+    fill="url(#hexGradient)"
+  />
+
+  <!-- Glass sheen highlight across the top third -->
+  <rect x="20" y="20" width="160" height="70" fill="url(#hexSheen)" clip-path="url(#hexClip)"/>
+
+  <!-- DA initials, centered -->
+  <text
+    x="100" y="124"
+    text-anchor="middle"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-weight="800"
+    font-size="70"
+    letter-spacing="1"
+    fill="#FFFFFF"
+  >DA</text>
+</svg>

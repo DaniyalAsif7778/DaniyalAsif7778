@@ -1,0 +1,24 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="frameTitle frameDesc">
+  <title id="frameTitle">Circular Glass Profile Frame</title>
+  <desc id="frameDesc">A circular glassmorphic frame with a blue gradient glow and a fully transparent center, meant to sit around a profile photo.</desc>
+
+  <defs>
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="ringGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <!-- ambient glow halo behind the ring -->
+  <circle cx="150" cy="150" r="120" fill="none" stroke="url(#ringGradient)" stroke-width="34" opacity="0.35" filter="url(#ringGlow)"/>
+
+  <!-- crisp glass ring — fill is intentionally "none" so the center stays fully transparent -->
+  <circle cx="150" cy="150" r="120" fill="none" stroke="url(#ringGradient)" stroke-width="14"/>
+
+  <!-- glass sheen: a soft highlight arc across the top third, standard glass-reflection cue -->
+  <path d="M37.24,108.96 A120,120 0 0,1 262.76,108.96" fill="none" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="7" stroke-linecap="round"/>
+</svg>

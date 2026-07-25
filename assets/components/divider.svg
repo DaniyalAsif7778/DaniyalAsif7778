@@ -1,0 +1,35 @@
+<svg width="1600" height="60" viewBox="0 0 1600 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="divTitle divDesc">
+  <title id="divTitle">Reusable Animated Divider</title>
+  <desc id="divDesc">A thin gradient line with a glowing highlight that sweeps left to right on a continuous loop, for use as a section divider.</desc>
+
+  <defs>
+    <!-- bright cyan core fading to transparent blue at both ends -->
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#38BDF8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+
+    <!--
+      userSpaceOnUse region instead of the default bounding-box percentage:
+      the highlight is only 2px tall, so a percentage-based filter region
+      would clip the blur. Fixed coordinates guarantee room to glow.
+    -->
+    <filter id="lineGlow" filterUnits="userSpaceOnUse" x="-50" y="0" width="500" height="60">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- static base line, always faintly visible -->
+  <rect x="0" y="29" width="1600" height="1.5" fill="#1E293B" opacity="0.6"/>
+
+  <!-- glowing highlight sweeping the full width; both endpoints sit off-canvas so the loop-restart jump is invisible -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="-400,0; 1600,0" dur="5s" repeatCount="indefinite"/>
+    <rect x="0" y="29" width="400" height="2" fill="url(#highlightGradient)" filter="url(#lineGlow)"/>
+  </g>
+</svg>

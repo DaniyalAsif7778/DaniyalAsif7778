@@ -1,0 +1,30 @@
+<svg width="112" height="48" viewBox="0 0 112 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Email Badge</title>
+  <desc id="desc">Glass pill badge with an envelope icon, linking out to a mailto address.</desc>
+
+  <defs>
+    <linearGradient id="pillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- glass pill -->
+  <rect x="0.75" y="0.75" width="110.5" height="46.5" rx="23.25" fill="#111827" fill-opacity="0.65" stroke="url(#pillGradient)" stroke-width="1.5" filter="url(#softGlow)"/>
+
+  <!-- icon -->
+  <g transform="translate(16,14)">
+      <rect x="3" y="5" width="14" height="10" rx="1.6" fill="none" stroke="#F8FAFC" stroke-width="1.5"/>
+      <path d="M3.6,6 L10,11.3 L16.4,6" fill="none" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- label -->
+  <text x="46" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="15" fill="#F8FAFC">Email</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bgTitle bgDesc">
+  <title id="bgTitle">Reusable Dark Background Layer</title>
+  <desc id="bgDesc">Animated dark background component: cross-fading gradient, drifting grid, dot texture, diagonal lines and grain — for reuse across the design system.</desc>
+
+  <defs>
+    <clipPath id="canvasClip">
+      <rect x="0" y="0" width="1600" height="500"/>
+    </clipPath>
+
+    <!-- Base gradient — same recipe used across the system for consistency -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117">
+        <animate attributeName="stop-color" values="#0D1117;#111827;#0D1117" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#111827">
+        <animate attributeName="stop-color" values="#111827;#0D1117;#111827" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Animated grid: an L-shaped tile that forms a full grid when repeated, drifting slowly -->
+    <pattern id="animGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <animateTransform attributeName="patternTransform" type="translate" values="0,0; 80,80; 0,0" dur="24s" repeatCount="indefinite"/>
+      <path d="M80 0 L0 0 0 80" fill="none" stroke="#2563EB" stroke-width="1"/>
+    </pattern>
+
+    <!-- Dot grid texture -->
+    <pattern id="dotGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#94A3B8"/>
+    </pattern>
+
+    <!-- Diagonal hairlines: vertical lines inside a 45°-rotated tile -->
+    <pattern id="diagonalLines" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+
+    <!-- Grain filter, reused across the system -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#canvasClip)">
+    <!-- 1. base cross-fading gradient -->
+    <rect width="1600" height="500" fill="url(#bgGradient)"/>
+
+    <!-- 2. slowly drifting grid -->
+    <rect width="1600" height="500" fill="url(#animGrid)" opacity="0.14"/>
+
+    <!-- 3. dot texture -->
+    <rect width="1600" height="500" fill="url(#dotGrid)" opacity="0.35"/>
+
+    <!-- 4. diagonal hairlines -->
+    <rect width="1600" height="500" fill="url(#diagonalLines)" opacity="0.10"/>
+
+    <!-- 5. film grain -->
+    <rect width="1600" height="500" filter="url(#grain)" opacity="0.035"/>
+  </g>
+</svg>

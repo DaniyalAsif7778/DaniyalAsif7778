@@ -1,0 +1,88 @@
+<svg width="400" height="450" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">E-Commerce — Project Card</title>
+  <desc id="desc">Modern MERN shopping platform with product catalog, cart, auth and a scalable component…</desc>
+
+  <defs>
+    <clipPath id="cardClip"><rect x="20" y="20" width="360" height="410" rx="20"/></clipPath>
+
+    <!-- v1.1 enriched gradient: adds a deep-indigo anchor and a brighter cyan highlight
+         around the original Primary/Secondary pair for more visual depth -->
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1E3A8A"/>
+      <stop offset="55%"  stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <radialGradient id="chipGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dotTexture" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#94A3B8"/>
+    </pattern>
+    <filter id="cardGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="chipBlur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <style>
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 22px; fill: #FFFFFF; letter-spacing: -0.3px; }
+      .card-desc  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 13.5px; fill: #94A3B8; }
+      .tag-text   { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 12px; fill: #E2E8F0; }
+      .cta-text   { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #22D3EE; }
+    </style>
+  </defs>
+
+  <!-- ambient edge glow -->
+  <rect x="20" y="20" width="360" height="410" rx="20" fill="none" stroke="#2563EB" stroke-opacity="0.3" stroke-width="2" filter="url(#cardGlow)"/>
+
+  <!-- glass card body -->
+  <rect x="20" y="20" width="360" height="410" rx="20" fill="#111827" fill-opacity="0.55" stroke="url(#cardBorder)" stroke-width="1.5"/>
+
+  <!-- faint dot texture -->
+  <rect x="20" y="20" width="360" height="410" fill="url(#dotTexture)" opacity="0.05" clip-path="url(#cardClip)"/>
+
+  <!-- glass sheen -->
+  <rect x="20" y="20" width="360" height="90" fill="url(#sheen)" clip-path="url(#cardClip)"/>
+
+  <!-- icon chip with its own soft cyan glow -->
+  <circle cx="70" cy="70" r="40" fill="url(#chipGlow)" filter="url(#chipBlur)"/>
+  <rect x="42" y="42" width="56" height="56" rx="16" fill="#0D1117" fill-opacity="0.65" stroke="url(#cardBorder)" stroke-opacity="0.6" stroke-width="1.2"/>
+  <g transform="translate(50,50)">
+      <path d="M9,14 L31,14 L29,33 C29,34 28,35 27,35 L13,35 C12,35 11,34 11,33 Z" fill="none" stroke="#F8FAFC" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M14,14 L14,10 C14,6.5 16.5,4 20,4 C23.5,4 26,6.5 26,10 L26,14" fill="none" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- title -->
+  <text x="42" y="132" class="card-title">E-Commerce</text>
+
+  <!-- description -->
+  <text x="42" y="154" class="card-desc">Modern MERN shopping platform with product</text>
+  <text x="42" y="173" class="card-desc">catalog, cart, auth and a scalable component…</text>
+
+  <!-- divider -->
+  <line x1="42" y1="364" x2="358" y2="364" stroke="#1E293B" stroke-width="1" opacity="0.6"/>
+
+  <!-- tech stack -->
+  <rect x="42.0" y="199" width="60.0" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="72.0" y="216.5" text-anchor="middle" class="tag-text">React</text>
+  <rect x="110.0" y="199" width="74.4" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="147.2" y="216.5" text-anchor="middle" class="tag-text">Node.js</text>
+  <rect x="192.4" y="199" width="74.4" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="229.6" y="216.5" text-anchor="middle" class="tag-text">Express</text>
+  <rect x="274.8" y="199" width="74.4" height="26" rx="13.0" fill="#0D1117" fill-opacity="0.55" stroke="url(#tagGrad)" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="312.0" y="216.5" text-anchor="middle" class="tag-text">MongoDB</text>
+
+  <!-- clickable affordance -->
+  <rect x="42" y="374" width="152" height="34" rx="17" fill="#0D1117" fill-opacity="0.5" stroke="url(#cardBorder)" stroke-opacity="0.6" stroke-width="1.2"/>
+  <text x="58" y="396" class="cta-text">View Project</text>
+  <path d="M170,386 L176,391 L170,396" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
