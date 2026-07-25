@@ -1,8 +1,8 @@
  
 <div align="center">
 
-<div style="display: block; width: 100%; margin: 0; padding: 0;">
-<img src="assets/core/banner.svg" style="width: 100%; height: auto; display: block; max-width: 100%;" alt="Daniyal Asif — MERN Stack Developer">
+<div  >
+<img src="assets/core/banner.svg"   alt="Daniyal Asif — MERN Stack Developer">
 </div>
 
 <br><br>
