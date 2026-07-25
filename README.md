@@ -1,4 +1,4 @@
- html
+ 
 <div align="center">
 
 <img src="assets/core/banner.svg" width="100%" alt="Daniyal Asif — MERN Stack Developer">
