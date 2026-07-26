@@ -1,6 +1,6 @@
 <svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">GitHub Stats — DaniyalAsif7778</title>
-  <desc id="desc">Live public GitHub stats for DaniyalAsif7778: 20 repositories, 0 followers, 1 following. Auto-updated by a scheduled GitHub Action.</desc>
+  <desc id="desc">Live public GitHub stats for DaniyalAsif7778: 20 repositories, 0 followers, 2 following. Auto-updated by a scheduled GitHub Action.</desc>
 
   <defs>
     <clipPath id="cardClip"><rect x="20" y="20" width="760" height="180" rx="20"/></clipPath>
@@ -40,6 +40,6 @@
   <text x="173.3" y="146" text-anchor="middle" class="stat-label">REPOSITORIES</text>
   <text x="400" y="118" text-anchor="middle" class="stat-value">0</text>
   <text x="400" y="146" text-anchor="middle" class="stat-label">FOLLOWERS</text>
-  <text x="626.7" y="118" text-anchor="middle" class="stat-value">1</text>
+  <text x="626.7" y="118" text-anchor="middle" class="stat-value">2</text>
   <text x="626.7" y="146" text-anchor="middle" class="stat-label">FOLLOWING</text>
 </svg>
