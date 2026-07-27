@@ -1,13 +1,13 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bannerTitle bannerDesc">
+<svg width="1600" height="980" viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bannerTitle bannerDesc">
   <title id="bannerTitle">Daniyal Asif — MERN Stack Developer</title>
   <desc id="bannerDesc">Animated dark glassmorphic profile banner for Daniyal Asif, MERN Stack Developer at 5d Flow, Pakistan, showing current tech stack and learning focus.</desc>
 
   <defs>
     <clipPath id="bannerClip">
-      <rect x="0" y="0" width="1600" height="900"/>
+      <rect x="0" y="0" width="1600" height="980"/>
     </clipPath>
     <clipPath id="cardClip">
-      <rect x="40" y="40" width="1520" height="780" rx="32"/>
+      <rect x="40" y="40" width="1520" height="840" rx="32"/>
     </clipPath>
 
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -51,104 +51,109 @@
       <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0"/>
     </filter>
 
+    <!--
+      Readability pass: system-UI font stack only (no external fonts GitHub could block),
+      letter-spacing brought back to neutral/positive everywhere (negative tracking on the
+      name was fighting legibility at small render sizes), sizes raised again across the board.
+    -->
     <style>
-      .name      { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 110px; fill: #FFFFFF; letter-spacing: -2px; }
-      .subtitle  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 42px; fill: #38BDF8; letter-spacing: 0.5px; }
-      .meta      { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 24px; fill: #94A3B8; }
-      .label     { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; fill: #64748B; letter-spacing: 3px; }
-      .pill-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #E2E8F0; }
+      .name      { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 130px; fill: #FFFFFF; letter-spacing: 0; }
+      .subtitle  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 48px; fill: #38BDF8; letter-spacing: 0.3px; }
+      .meta      { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 27px; fill: #B6C2D4; }
+      .label     { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 20px; fill: #8AA0BE; letter-spacing: 3px; }
+      .pill-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 22px; fill: #F1F5F9; }
     </style>
   </defs>
 
-  <rect width="1600" height="900" fill="url(#bgGradient)"/>
+  <rect width="1600" height="980" fill="url(#bgGradient)"/>
 
   <g clip-path="url(#bannerClip)">
-    <rect width="1600" height="900" filter="url(#grain)" opacity="0.03"/>
+    <rect width="1600" height="980" filter="url(#grain)" opacity="0.03"/>
 
-    <circle cx="260" cy="257" r="380" fill="url(#glowPrimary)" filter="url(#orbBlur)">
+    <circle cx="260" cy="280" r="414" fill="url(#glowPrimary)" filter="url(#orbBlur)">
       <animateTransform attributeName="transform" type="translate" values="0,0; 40,25; 0,0" dur="22s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1350" cy="668" r="410" fill="url(#glowSecondary)" filter="url(#orbBlur)">
+    <circle cx="1350" cy="728" r="446" fill="url(#glowSecondary)" filter="url(#orbBlur)">
       <animateTransform attributeName="transform" type="translate" values="0,0; -35,-20; 0,0" dur="26s" repeatCount="indefinite"/>
     </circle>
 
-    <circle cx="150"  cy="756" r="2"   fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13s" begin="0s"    repeatCount="indefinite"/><animate attributeName="cy" values="756;693" dur="13s" begin="0s"    repeatCount="indefinite"/></circle>
-    <circle cx="310"  cy="288" r="1.6" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16s" begin="1.2s"  repeatCount="indefinite"/><animate attributeName="cy" values="288;216" dur="16s" begin="1.2s"  repeatCount="indefinite"/></circle>
-    <circle cx="460"  cy="648" r="2.4" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11s" begin="2.4s"  repeatCount="indefinite"/><animate attributeName="cy" values="648;594" dur="11s" begin="2.4s"  repeatCount="indefinite"/></circle>
-    <circle cx="610"  cy="162" r="1.8" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="19s" begin="0.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="162;81"  dur="19s" begin="0.6s"  repeatCount="indefinite"/></circle>
-    <circle cx="760"  cy="558" r="2.1" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="14s" begin="3.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="558;490" dur="14s" begin="3.1s"  repeatCount="indefinite"/></circle>
-    <circle cx="900"  cy="774" r="1.7" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="17s" begin="1.8s"  repeatCount="indefinite"/><animate attributeName="cy" values="774;716" dur="17s" begin="1.8s"  repeatCount="indefinite"/></circle>
-    <circle cx="1040" cy="252" r="2.3" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="12s" begin="2.9s"  repeatCount="indefinite"/><animate attributeName="cy" values="252;176" dur="12s" begin="2.9s"  repeatCount="indefinite"/></circle>
-    <circle cx="1180" cy="648" r="1.9" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="15s" begin="0.3s"  repeatCount="indefinite"/><animate attributeName="cy" values="648;584" dur="15s" begin="0.3s"  repeatCount="indefinite"/></circle>
-    <circle cx="1300" cy="378" r="2.2" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="18s" begin="3.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="378;306" dur="18s" begin="3.6s"  repeatCount="indefinite"/></circle>
-    <circle cx="1420" cy="738" r="1.6" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="10s" begin="1.5s"  repeatCount="indefinite"/><animate attributeName="cy" values="738;684" dur="10s" begin="1.5s"  repeatCount="indefinite"/></circle>
-    <circle cx="1500" cy="198" r="2"   fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="20s" begin="2.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="198;118" dur="20s" begin="2.1s"  repeatCount="indefinite"/></circle>
-    <circle cx="90"   cy="468" r="1.8" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13.5s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="cy" values="468;406" dur="13.5s" begin="0.9s" repeatCount="indefinite"/></circle>
-    <circle cx="1550" cy="576" r="2.1" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16.5s" begin="3.3s" repeatCount="indefinite"/><animate attributeName="cy" values="576;508" dur="16.5s" begin="3.3s" repeatCount="indefinite"/></circle>
-    <circle cx="240"  cy="828" r="1.7" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11.5s" begin="2.7s" repeatCount="indefinite"/><animate attributeName="cy" values="828;770" dur="11.5s" begin="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="150"  cy="823" r="2"   fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13s" begin="0s"    repeatCount="indefinite"/><animate attributeName="cy" values="823;755" dur="13s" begin="0s"    repeatCount="indefinite"/></circle>
+    <circle cx="310"  cy="314" r="1.6" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16s" begin="1.2s"  repeatCount="indefinite"/><animate attributeName="cy" values="314;235" dur="16s" begin="1.2s"  repeatCount="indefinite"/></circle>
+    <circle cx="460"  cy="706" r="2.4" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11s" begin="2.4s"  repeatCount="indefinite"/><animate attributeName="cy" values="706;647" dur="11s" begin="2.4s"  repeatCount="indefinite"/></circle>
+    <circle cx="610"  cy="176" r="1.8" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="19s" begin="0.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="176;88"  dur="19s" begin="0.6s"  repeatCount="indefinite"/></circle>
+    <circle cx="760"  cy="608" r="2.1" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="14s" begin="3.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="608;534" dur="14s" begin="3.1s"  repeatCount="indefinite"/></circle>
+    <circle cx="900"  cy="843" r="1.7" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="17s" begin="1.8s"  repeatCount="indefinite"/><animate attributeName="cy" values="843;780" dur="17s" begin="1.8s"  repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="274" r="2.3" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="12s" begin="2.9s"  repeatCount="indefinite"/><animate attributeName="cy" values="274;192" dur="12s" begin="2.9s"  repeatCount="indefinite"/></circle>
+    <circle cx="1180" cy="706" r="1.9" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="15s" begin="0.3s"  repeatCount="indefinite"/><animate attributeName="cy" values="706;636" dur="15s" begin="0.3s"  repeatCount="indefinite"/></circle>
+    <circle cx="1300" cy="412" r="2.2" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="18s" begin="3.6s"  repeatCount="indefinite"/><animate attributeName="cy" values="412;333" dur="18s" begin="3.6s"  repeatCount="indefinite"/></circle>
+    <circle cx="1420" cy="804" r="1.6" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="10s" begin="1.5s"  repeatCount="indefinite"/><animate attributeName="cy" values="804;745" dur="10s" begin="1.5s"  repeatCount="indefinite"/></circle>
+    <circle cx="1500" cy="216" r="2"   fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="20s" begin="2.1s"  repeatCount="indefinite"/><animate attributeName="cy" values="216;129" dur="20s" begin="2.1s"  repeatCount="indefinite"/></circle>
+    <circle cx="90"   cy="510" r="1.8" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="13.5s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="cy" values="510;442" dur="13.5s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="1550" cy="627" r="2.1" fill="#38BDF8" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="16.5s" begin="3.3s" repeatCount="indefinite"/><animate attributeName="cy" values="627;553" dur="16.5s" begin="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="240"  cy="902" r="1.7" fill="#2563EB" opacity="0"><animate attributeName="opacity" values="0;0.6;0" dur="11.5s" begin="2.7s" repeatCount="indefinite"/><animate attributeName="cy" values="902;839" dur="11.5s" begin="2.7s" repeatCount="indefinite"/></circle>
 
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0; -1600,0" dur="18s" repeatCount="indefinite"/>
-      <path d="M0,828 C400,884 800,772 1600,828 C2000,884 2400,772 3200,828 L3200,900 L0,900 Z" fill="url(#waveGradient)"/>
+      <path d="M0,920 C400,965 800,880 1600,920 C2000,965 2400,880 3200,920 L3200,980 L0,980 Z" fill="url(#waveGradient)"/>
     </g>
   </g>
 
-  <rect x="40" y="40" width="1520" height="780" rx="32" fill="none" stroke="#2563EB" stroke-opacity="0.35" stroke-width="2" filter="url(#softGlow)"/>
-  <rect x="40" y="40" width="1520" height="780" rx="32" fill="#111827" fill-opacity="0.50" stroke="#1E293B" stroke-width="1"/>
-  <rect x="40" y="40" width="1520" height="220" fill="url(#cardSheen)" clip-path="url(#cardClip)"/>
+  <rect x="40" y="40" width="1520" height="840" rx="32" fill="none" stroke="#2563EB" stroke-opacity="0.35" stroke-width="2" filter="url(#softGlow)"/>
+  <rect x="40" y="40" width="1520" height="840" rx="32" fill="#111827" fill-opacity="0.50" stroke="#1E293B" stroke-width="1"/>
+  <rect x="40" y="40" width="1520" height="230" fill="url(#cardSheen)" clip-path="url(#cardClip)"/>
 
-  <text x="96" y="220" class="name">Daniyal Asif</text>
-  <text x="98" y="280" class="subtitle">MERN Stack Developer</text>
+  <text x="96" y="250" class="name">Daniyal Asif</text>
+  <text x="98" y="320" class="subtitle">MERN Stack Developer</text>
 
-  <circle cx="104" cy="335" r="7" fill="#2563EB">
+  <circle cx="104" cy="385" r="7" fill="#2563EB">
     <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="126" y="343" class="meta">Currently building @ 5d Flow</text>
+  <text x="126" y="393" class="meta">Currently building @ 5d Flow</text>
 
-  <line x1="96" y1="380" x2="1504" y2="380" stroke="#1E293B" stroke-width="1" opacity="0.6"/>
+  <line x1="96" y1="430" x2="1504" y2="430" stroke="#1E293B" stroke-width="1" opacity="0.6"/>
 
-  <text x="98" y="430" class="label">CURRENTLY LEARNING</text>
+  <text x="98" y="478" class="label">CURRENTLY LEARNING</text>
   <g>
-    <rect x="96"  y="450" width="191" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="191" y="482" text-anchor="middle" class="pill-text">System Design</text>
+    <rect x="96"  y="498" width="216" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="204" y="534" text-anchor="middle" class="pill-text">System Design</text>
 
-    <rect x="301" y="450" width="226" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="414" y="482" text-anchor="middle" class="pill-text">Scalable Backend</text>
+    <rect x="326" y="498" width="255" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="453" y="534" text-anchor="middle" class="pill-text">Scalable Backend</text>
 
-    <rect x="541" y="450" width="156" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="619" y="482" text-anchor="middle" class="pill-text">Agentic AI</text>
+    <rect x="595" y="498" width="176" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="683" y="534" text-anchor="middle" class="pill-text">Agentic AI</text>
 
-    <rect x="711" y="450" width="307" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="864" y="482" text-anchor="middle" class="pill-text">Artificial Intelligence</text>
+    <rect x="785" y="498" width="348" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="959" y="534" text-anchor="middle" class="pill-text">Artificial Intelligence</text>
   </g>
 
-  <text x="98" y="560" class="label">TECH STACK</text>
+  <text x="98" y="606" class="label">TECH STACK</text>
   <g>
-    <rect x="96"   y="580" width="98"  height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="145"  y="612" text-anchor="middle" class="pill-text">React</text>
+    <rect x="96"  y="626" width="110" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="151" y="662" text-anchor="middle" class="pill-text">React</text>
 
-    <rect x="208"  y="580" width="121" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="268"  y="612" text-anchor="middle" class="pill-text">Next.js</text>
+    <rect x="220" y="626" width="136" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="288" y="662" text-anchor="middle" class="pill-text">Next.js</text>
 
-    <rect x="343"  y="580" width="121" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="403"  y="612" text-anchor="middle" class="pill-text">Node.js</text>
+    <rect x="370" y="626" width="136" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="438" y="662" text-anchor="middle" class="pill-text">Node.js</text>
 
-    <rect x="478"  y="580" width="121" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="538"  y="612" text-anchor="middle" class="pill-text">Express</text>
+    <rect x="520" y="626" width="136" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="588" y="662" text-anchor="middle" class="pill-text">Express</text>
 
-    <rect x="613"  y="580" width="121" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="673"  y="612" text-anchor="middle" class="pill-text">MongoDB</text>
+    <rect x="670" y="626" width="136" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="738" y="662" text-anchor="middle" class="pill-text">MongoDB</text>
 
-    <rect x="748"  y="580" width="179" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="837"  y="612" text-anchor="middle" class="pill-text">Tailwind CSS</text>
+    <rect x="96"  y="698" width="202" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="197" y="734" text-anchor="middle" class="pill-text">Tailwind CSS</text>
 
-    <rect x="941"  y="580" width="156" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="1019" y="612" text-anchor="middle" class="pill-text">TypeScript</text>
+    <rect x="312" y="698" width="176" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="400" y="734" text-anchor="middle" class="pill-text">TypeScript</text>
 
-    <rect x="1111" y="580" width="191" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="1206" y="612" text-anchor="middle" class="pill-text">Redux Toolkit</text>
+    <rect x="502" y="698" width="216" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="610" y="734" text-anchor="middle" class="pill-text">Redux Toolkit</text>
 
-    <rect x="1316" y="580" width="156" height="50" rx="25" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
-    <text x="1394" y="612" text-anchor="middle" class="pill-text">JavaScript</text>
+    <rect x="732" y="698" width="176" height="58" rx="29" fill="#111827" fill-opacity="0.55" stroke="#2563EB" stroke-opacity="0.45" stroke-width="1"/>
+    <text x="820" y="734" text-anchor="middle" class="pill-text">JavaScript</text>
   </g>
 </svg>
