@@ -73,31 +73,31 @@ I'm a MERN Stack Developer from Pakistan, currently working at **5d Flow**. I en
 <br/>
 
 <a href="https://employ-managment-system.vercel.app/">
-<img src="assets/cards/employee-management-card.svg" width="100%" alt="Employee Management System — production-grade MERN app for managing employees, roles, tasks and org structure" />
+<img src="assets/cards/employee-management-card.svg" width="600" alt="Employee Management System — production-grade MERN app for managing employees, roles, tasks and org structure" />
 </a>
 
 <br/><br/>
 
 <a href="https://github.com/DaniyalAsif7778/E-Commerse">
-<img src="assets/cards/ecommerce-card.svg" width="100%" alt="E-Commerce — modern MERN shopping platform with cart, auth and scalable architecture" />
+<img src="assets/cards/ecommerce-card.svg" width="600" alt="E-Commerce — modern MERN shopping platform with cart, auth and scalable architecture" />
 </a>
 
 <br/><br/>
 
 <a href="https://daniyal-porfolio-three.vercel.app/">
-<img src="assets/cards/portfolio-card.svg" width="100%" alt="Portfolio — personal site with responsive layouts and clean animations" />
+<img src="assets/cards/portfolio-card.svg" width="600" alt="Portfolio — personal site with responsive layouts and clean animations" />
 </a>
 
 <br/><br/>
 
 <a href="https://github.com/DaniyalAsif7778/Weather-App">
-<img src="assets/cards/weather-app-card.svg" width="100%" alt="Weather App — responsive weather app using external APIs" />
+<img src="assets/cards/weather-app-card.svg" width="600" alt="Weather App — responsive weather app using external APIs" />
 </a>
 
 <br/><br/>
 
 <a href="https://github.com/DaniyalAsif7778/React-Currency-Changer">
-<img src="assets/cards/currency-converter-card.svg" width="100%" alt="Currency Converter — lightweight converter with real-time exchange rates" />
+<img src="assets/cards/currency-converter-card.svg" width="600" alt="Currency Converter — lightweight converter with real-time exchange rates" />
 </a>
 
 </div>
