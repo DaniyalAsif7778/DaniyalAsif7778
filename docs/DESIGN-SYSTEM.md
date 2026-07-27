@@ -1,5 +1,20 @@
 # Design System
 
+## Banner scaling — root cause & fix
+
+**Symptom:** the hero banner looked sharp opened directly, but text became hard to read once embedded in `README.md`, especially on mobile.
+
+**Diagnosis, working through each candidate:**
+
+| Candidate | Verdict |
+|---|---|
+| SVG file size | Not the cause — 12KB either way, irrelevant to rendered legibility |
+| ViewBox / width / height mismatch | Not the cause — they matched correctly, so scaling was proportional, not distorted |
+| GitHub Markdown/image rendering | Not a bug — `width="100%"` scaling an `<img>` to its container is exactly how it's supposed to work |
+| **Aspect ratio + font scale (the real cause)** | The banner was `1600×500` (3.2:1) — very wide relative to its height. GitHub's README content column is roughly 800–860px on desktop and can be under 400px on mobile. At mobile width, the whole 1600-unit-wide canvas was being scaled down by roughly 4×. Every absolute size drawn into that canvas — the 58px name, the 14px pill labels — shrank by the same 4×, landing well under comfortable reading size. |
+
+**Fix applied:** the canvas grew to `1600×700` (a taller, less extreme ratio) and every font size increased alongside it (name 58→76px, pill text 14→16px, labels 12→14px), with spacing opened up to match. The scale-down on a phone is the same *proportion* as before, but it's now scaling down from a bigger starting point, so the result stays legible. Layout, colors, animation, and content are unchanged — same design, just built to survive being shrunk.
+
 ## Color tokens
 
 **Base (locked from the original brief, unchanged):**
@@ -14,46 +29,44 @@
 | Muted Text | `#94A3B8` | Secondary copy |
 | Border | `#1E293B` | Hairlines |
 
-**v1.1 extension** (added this pass, in response to the color-scheme feedback — additive, nothing above was removed or changed):
+**v1.1 extension** (additive — nothing above was removed):
 
 | Token | Hex | Role |
 |---|---|---|
-| Accent Deep | `#1E3A8A` | Gradient depth anchor — the flat 2-stop Primary→Secondary border read a little thin; this adds a darker indigo anchor so borders/glows have a visible near→far gradient instead of a single blend |
-| Accent Bright | `#22D3EE` | Highlight — used for CTA text/arrows and the icon-chip glow, so interactive elements read as a shade brighter than static ones |
+| Accent Deep | `#1E3A8A` | Gradient depth anchor on the project/stat cards' 3-stop border |
+| Accent Bright | `#22D3EE` | Highlight color for CTA text/arrows and icon-chip glow |
 
-Applied so far to: all 5 project cards, the stats card. Not yet applied to the hero banner, badges, or effect layers — those still use the original 2-stop gradient. Say the word if you want the v1.1 gradient rolled out system-wide; it's a bounded change (one gradient definition per file) rather than a rebuild.
+## GitHub Statistics
 
-## Spacing
-
-Every glass card in the system now shares one spacing rhythm: **22px inner padding**, **16px** between unrelated blocks (icon → title, tags → CTA), **10–14px** between related lines (title → description, description → tags). The project cards previously had ad hoc gaps hand-picked per element; this pass replaced that with a single generator (`/home/claude` build scripts) so every card's vertical rhythm is computed the same way instead of eyeballed per file.
+Live stats intentionally use standard third-party services (`github-readme-stats`, `github-readme-streak-stats`, `github-readme-activity-graph`) instead of a custom SVG card — see `docs/README-INTEGRATION.md` for the full rationale and the exact URLs in use. This replaces the earlier custom `stats-card.svg` + GitHub Action approach from a prior pass; that workflow and generator script have been removed from this repo since they're no longer needed.
 
 ## Accessibility
 
-- Every SVG has a `<title>` and `<desc>`, and the root element carries `role="img" aria-labelledby="title desc"`.
-- Every `<img>` in `README.md` has real, specific `alt` text — none are empty or generic ("image", "svg").
-- Contrast: body text is `#94A3B8` on backgrounds at or near `#0D1117`/`#111827`, which sits comfortably above WCAG AA (4.5:1) for normal text; headings are `#FFFFFF` on the same backgrounds, far above AA. Nothing in the system relies on color alone to convey information (tech tags and stats also carry text labels).
-- Decorative-only images (the two `divider.svg` uses between sections) use `alt=""` deliberately, so screen readers skip them instead of reading a meaningless label.
+- Every SVG has a `<title>` and `<desc>`, and the root element carries `role="img" aria-labelledby="title desc"` — verified across all 17 local assets in this pass.
+- Every `<img>` in `README.md` has real, specific `alt` text — none are empty or generic, except the three purely decorative `divider.svg` uses, which use `alt=""` on purpose so screen readers skip them.
+- Contrast: body text (`#94A3B8`) and headings (`#FFFFFF`) on backgrounds at or near `#0D1117`/`#111827` both sit comfortably above WCAG AA for their respective text sizes.
 
-## SVG size
+## SVG footprint
 
-18 files, **140KB total** — for context, that's smaller than a single unoptimized photo. The two largest are `banner.svg` (13KB, the animated hero) and `particles.svg` (11.6KB, 30 independently-animated particles); both are already at 1-decimal coordinate precision with no redundant nodes. Nothing here needed shrinking enough to justify a rewrite — the badges and cards average 1.5–7KB each.
+17 local files, **~72KB total** (down from ~140KB before the custom stats card + workflow were removed). Largest are `banner.svg` (~12KB) and `particles.svg` (~11.6KB); both are already at 1-decimal coordinate precision with no redundant nodes.
 
 ## Animation performance
 
-Everything animates via native SMIL (`<animate>` / `<animateTransform>`), which is GPU/compositor-friendly in every current browser and requires zero JavaScript. Filters are the one thing that costs real render time — `feGaussianBlur` and `feTurbulence` are more expensive than plain shape animation — so the system deliberately: uses blur only on glow/ambient layers (never on the 30-particle field, which is why those particles are plain filter-free circles), and keeps grain/noise opacity at 3-6% so it can stay cheap and low-resolution without looking flat.
+Everything animates via native SMIL, GPU/compositor-friendly, zero JavaScript. Blur filters (`feGaussianBlur`, `feTurbulence`) are reserved for ambient/glow layers only — the 30-particle field in `particles.svg` deliberately uses plain, filter-free circles so animating 30 elements stays cheap.
 
 ## Duplication
 
-Within a single file, shared values (colors, filters, text styles) are defined once in `<defs>`/`<style>` and referenced by `url(#id)` or class — there's no repeated gradient or filter markup inside any one file. *Across* files, the same gradient/filter recipes are intentionally copy-pasted rather than shared live: an SVG referencing another file (`<use href="other.svg#id">`) doesn't reliably resolve once the parent is loaded via `<img>` on GitHub, so cross-file duplication here is the price of every asset working standalone. Documented in `docs/README-INTEGRATION.md` rather than "fixed," since fixing it would mean breaking GitHub compatibility.
+Within a single file, shared values live once in `<defs>`/`<style>` and are referenced by `url(#id)` or class. *Across* files, the same gradient/filter recipes are intentionally copy-pasted rather than shared live: `<use href="other.svg#id">` doesn't reliably resolve once the parent SVG is loaded via `<img>` on GitHub, so cross-file duplication here is the price of every asset working standalone (documented, not accidental).
 
 ## GitHub-compatibility checklist
 
-- [x] No inline `<svg>` in `README.md` — everything is a file, referenced via `<img>`
-- [x] No inline `style="..."` attributes anywhere in `README.md` (GitHub strips them) — layout uses `align`, `width`, `height` only
-- [x] No external font loads (`@font-face` / Google Fonts) — system font stack only, for consistent rendering
-- [x] No client-side JavaScript anywhere — animation is SMIL, stats refresh is server-side (GitHub Actions), not browser JS
-- [x] No third-party badge/generator services (shields.io, readme-stats, etc.) — every visual is hand-built
-- [x] Case-correct, repo-relative asset paths throughout
+- [x] No inline `<svg>` in `README.md` — everything is a file or an external service, referenced via `<img>`
+- [x] No inline `style="..."` attributes anywhere in `README.md` — layout uses `align`, `width`, `height` only
+- [x] No external font loads in the SVGs — system font stack only
+- [x] No client-side JavaScript anywhere
+- [x] Local visuals (hero, badges, cards) are hand-built, no generator templates; stats deliberately use standard external services by request
+- [x] Case-correct, repo-relative asset paths throughout — verified against the actual file tree in this pass
+- [x] Every `href` in `README.md` checked against a real, provided URL — no placeholder links
 
 ## Folder structure
 
@@ -64,18 +77,15 @@ github-profile/
 │   ├── effects/        background.svg, particles.svg, glow.svg
 │   ├── components/     divider.svg, wave.svg, profile-frame.svg
 │   ├── badges/         github/linkedin/email/portfolio-badge.svg
-│   ├── cards/           5 project cards
-│   └── stats/           stats-card.svg (auto-updated)
-├── .github/workflows/   update-stats.yml
-├── scripts/             generate-stats-card.js
+│   └── cards/          5 project cards
 ├── docs/                this file, INSTALLATION.md, README-INTEGRATION.md
 ├── README.md
 └── LICENSE
 ```
 
-`.github/` and `scripts/` weren't in the folder sketch you gave, but the live-updating stats card you asked for needs somewhere to run from — they're the minimum required for that to actually work, not scope creep for its own sake.
+Simpler than the previous pass — `.github/workflows/` and `scripts/` were removed along with the custom stats card, since nothing in the repo needs to run server-side anymore.
 
 ## Still open
 
-- `profile-frame.svg` exists but isn't used in `README.md` — no confirmed profile photo yet.
-- Portfolio, Weather App, and Currency Converter tech tags are inferred from your general stack, not confirmed per-project.
+- `profile-frame.svg` and `background.svg`/`glow.svg` (as standalone files) exist in `assets/` but aren't referenced in `README.md` yet — `background.svg`/`glow.svg`'s techniques are already baked directly into `banner.svg` and the cards; `profile-frame.svg` is waiting on a decision about using a real photo.
+- Portfolio, Weather App, and Currency Converter tech tags on the project cards are inferred from the general stack, not confirmed per-project.
