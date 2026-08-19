@@ -31,11 +31,19 @@ DaniyalAsif7778/
 └── docs/
 ```
 
-## 3. Stats — nothing to configure
+## 3. Generate the stats cards (one-time)
 
-GitHub Stats, Top Languages, Streak, and the Activity Graph are all pulled live from third-party rendering services (`github-readme-stats`, `github-readme-streak-stats`, `github-readme-activity-graph`) directly in `README.md`. There's no workflow, token, or build step — the images are just URLs, and each service regenerates the SVG on every request using your live public GitHub data. As soon as the README is pushed, they work.
+Stats now come from a GitHub Action that runs inside this repo — not a public third-party service — because the public `github-readme-stats` / streak / activity-graph instances turned out to be unreliable (a widely-reported, ongoing problem with those free shared deployments, confirmed across dozens of open issues on their repos).
 
-If any of them ever go down (they're free, community-run services, so occasional downtime happens), the `<img>` just fails to load — nothing else in the README breaks, and reloading later resolves it.
+Once you've pushed this repo:
+
+1. Go to the **Actions** tab → **GitHub Profile Summary Cards** → **Run workflow**.
+2. Wait for it to finish (usually under a minute) — it commits SVGs into `profile-summary-card-output/github_dark_dimmed/`.
+3. Refresh your profile page. `README.md` already points at those paths.
+
+It also re-runs automatically once a day, so the numbers stay current without you doing anything after this first run.
+
+**If a filename doesn't match:** the action's exact output filenames can shift between versions. If an image shows broken after the first run, open `profile-summary-card-output/github_dark_dimmed/` in the repo, check the actual filenames there, and adjust the three `<img src="profile-summary-card-output/...">` paths in `README.md` to match — should only ever be a path tweak, not a redesign.
 
 ## 4. Verify
 
@@ -43,4 +51,4 @@ Visit `https://github.com/DaniyalAsif7778` — the hero banner, badges, stats, a
 
 ## Requirements
 
-None. Every local asset is a plain `.svg` file, and the live stats are external image URLs — there's no build step, no dependencies, and nothing to install to use this repo as-is.
+No local build step — every visual asset is a plain `.svg` file. The one thing that needs a manual trigger is the stats workflow's first run (step 3 above); after that it's fully automatic.

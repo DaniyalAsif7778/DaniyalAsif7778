@@ -1,0 +1,30 @@
+name: GitHub Profile Summary Cards
+
+# Regenerates the stats cards used in README.md and commits them straight
+# into this repo (profile-summary-card-output/). Unlike the previous
+# approach — an <img> pointed at a shared public service — this runs
+# entirely inside your own repo, so there's no third-party server that can
+# rate-limit or go down between page loads. Swapped in after the public
+# github-readme-stats/streak-stats/activity-graph instances turned out to
+# be unreliable (a widely reported, ongoing issue with those free shared
+# deployments, not something wrong with this repo's setup).
+on:
+  schedule:
+    - cron: "0 6 * * *" # once a day at 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: DaniyalAsif7778
+          THEME: github_dark_dimmed
