@@ -43,9 +43,9 @@ I'm a MERN Stack Developer from Pakistan, currently working at **5d Flow**. I en
 
 ## 📊 GitHub Stats
 
-<img src="profile-summary-card-output/github_dark_dimmed/profile-details.svg" alt="Daniyal's GitHub profile summary" width="100%" />
-<img src="profile-summary-card-output/github_dark_dimmed/repos-per-language.svg" alt="Daniyal's most used languages" width="45%" />
-<img src="profile-summary-card-output/github_dark_dimmed/stats.svg" alt="Daniyal's GitHub stats" width="45%" />
+<img src="profile-summary-card-output/github_dark/profile-details.svg" alt="Daniyal's GitHub profile summary" width="100%" />
+<img src="profile-summary-card-output/github_dark/repos-per-language.svg" alt="Daniyal's most used languages" width="45%" />
+<img src="profile-summary-card-output/github_dark/stats.svg" alt="Daniyal's GitHub stats" width="45%" />
 
 <sub>Generated once a day by <a href=".github/workflows/profile-summary-cards.yml">a GitHub Action in this repo</a> and committed straight into <code>profile-summary-card-output/</code> — no third-party server has to be up when someone visits your profile, which is what made the previous public-service embeds unreliable. First run: trigger the workflow once from the Actions tab, then these paths will resolve. See <code>docs/INSTALLATION.md</code>.</sub>
 
@@ -65,33 +65,17 @@ I'm a MERN Stack Developer from Pakistan, currently working at **5d Flow**. I en
 
 <br/>
 
-<a href="https://employ-managment-system.vercel.app/">
-<img src="assets/cards/employee-management-card.svg" width="420" alt="Employee Management System — production-grade MERN app for managing employees, roles, tasks and org structure" />
-</a>
+<a href="https://employ-managment-system.vercel.app/"><img src="assets/cards/employee-management-card.svg" width="380" alt="Employee Management System — production-grade MERN app for managing employees, roles, tasks and org structure" /></a>
+<a href="https://github.com/DaniyalAsif7778/E-Commerse"><img src="assets/cards/ecommerce-card.svg" width="380" alt="E-Commerce — modern MERN shopping platform with cart, auth and scalable architecture" /></a>
 
 <br/><br/>
 
-<a href="https://github.com/DaniyalAsif7778/E-Commerse">
-<img src="assets/cards/ecommerce-card.svg" width="420" alt="E-Commerce — modern MERN shopping platform with cart, auth and scalable architecture" />
-</a>
+<a href="https://daniyal-porfolio-three.vercel.app/"><img src="assets/cards/portfolio-card.svg" width="380" alt="Portfolio — personal site with responsive layouts and clean animations" /></a>
+<a href="https://github.com/DaniyalAsif7778/Weather-App"><img src="assets/cards/weather-app-card.svg" width="380" alt="Weather App — responsive weather app using external APIs" /></a>
 
 <br/><br/>
 
-<a href="https://daniyal-porfolio-three.vercel.app/">
-<img src="assets/cards/portfolio-card.svg" width="420" alt="Portfolio — personal site with responsive layouts and clean animations" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/DaniyalAsif7778/Weather-App">
-<img src="assets/cards/weather-app-card.svg" width="420" alt="Weather App — responsive weather app using external APIs" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/DaniyalAsif7778/React-Currency-Changer">
-<img src="assets/cards/currency-converter-card.svg" width="420" alt="Currency Converter — lightweight converter with real-time exchange rates" />
-</a>
+<a href="https://github.com/DaniyalAsif7778/React-Currency-Changer"><img src="assets/cards/currency-converter-card.svg" width="380" alt="Currency Converter — lightweight converter with real-time exchange rates" /></a>
 
 </div>
 

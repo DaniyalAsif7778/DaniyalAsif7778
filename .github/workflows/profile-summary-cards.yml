@@ -24,7 +24,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The default GITHUB_TOKEN doesn't carry enough scope for this action to
+          # compute full stats reliably (this is documented by the action itself,
+          # not a mistake in this workflow) — use a personal access token instead.
+          # Create one and add it as a repo secret named SUMMARY_GITHUB_TOKEN;
+          # steps are in docs/INSTALLATION.md.
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
         with:
           USERNAME: DaniyalAsif7778
-          THEME: github_dark_dimmed
+          THEME: github_dark
