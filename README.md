@@ -43,9 +43,9 @@ I'm a MERN Stack Developer from Pakistan, currently working at **5d Flow**. I en
 
 ## 📊 GitHub Stats
 
-<img src="profile-summary-card-output/github_dark/profile-details.svg" alt="Daniyal's GitHub profile summary" width="100%" />
-<img src="profile-summary-card-output/github_dark/repos-per-language.svg" alt="Daniyal's most used languages" width="45%" />
-<img src="profile-summary-card-output/github_dark/stats.svg" alt="Daniyal's GitHub stats" width="45%" />
+<img src="profile-summary-card-output/github_dark/0-profile-details.svg" alt="Daniyal's GitHub profile summary" width="100%" />
+<img src="profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Daniyal's most used languages" width="45%" />
+<img src="profile-summary-card-output/github_dark/3-stats.svg" alt="Daniyal's GitHub stats" width="45%" />
 
 <sub>Generated once a day by <a href=".github/workflows/profile-summary-cards.yml">a GitHub Action in this repo</a> and committed straight into <code>profile-summary-card-output/</code> — no third-party server has to be up when someone visits your profile, which is what made the previous public-service embeds unreliable. First run: trigger the workflow once from the Actions tab, then these paths will resolve. See <code>docs/INSTALLATION.md</code>.</sub>
 
